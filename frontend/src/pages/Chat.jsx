@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom"
+import logo from "../assets/img/EY-GPT.webp"
 
 const Chat = () => {
   const functionUrl = import.meta.env.VITE_API_URL + "/api/chat"
@@ -92,7 +93,7 @@ const Chat = () => {
         {/* Logo */}
         <Link to="/">
           <img
-            src="../public/EY-GPT.webp"
+            src={logo}
             alt="logo"
             className="w-20 absolute top-0 left-0 z-20"
           />

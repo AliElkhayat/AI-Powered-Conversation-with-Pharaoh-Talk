@@ -9,12 +9,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // middlewares
-app.use(cors({ origin: "http://localhost:5173" })); 
+app.use(cors({ origin: "https://ai-powered-conversation-with-pharao.vercel.app/" })); 
 app.use(express.json());
 
 // routes
 app.use("/api/chat", chatRoute);
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
+export default app;
+

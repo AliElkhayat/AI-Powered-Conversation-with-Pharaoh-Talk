@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import backgroundVedio from "../assets/background vedio/backgroundVedio.mp4"
-import img from "../assets/img/EY-GPT.webp"
+import logo from "../assets/img/EY-GPT.webp"
 const intro = () => {
 
     return (
@@ -14,7 +14,7 @@ const intro = () => {
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/40"></div>
                 <Link to={"/"}>
-                    <img src={img} className="w-30 absolute top-0 left-0  " alt="logo" />
+                    <img src={logo} className="w-30 absolute top-0 left-0  " alt="logo" />
                 </Link>
                 {/* blur */}
                 <div className="relative z-10 text-center text-white p-10 rounded-2xl 
@@ -35,7 +35,7 @@ const intro = () => {
                             hover:scale-105 
                             transition-all duration-300">
                                 <img
-                                    src={img}
+                                    src={logo}
                                     alt="Eye of Horus"
                                     className="w-6 h-6"
                                 />
