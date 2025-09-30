@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import logo from "../assets/img/EY-GPT.webp"
 
 const Chat = () => {
-  const functionUrl = import.meta.env.VITE_API_URL + "/api/chat"
+  const functionUrl = import.meta.env.VITE_API_URL + "api/chat"
 
   const [messages, setMessages] = useState([
     {
