@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // middlewares
-app.use(cors({ origin: "https://ai-powered-conversation-with-pharao.vercel.app/" })); 
+app.use(cors({ origin: "https://ai-powered-conversation-with-pharaoh-talk-kby5dwmzg.vercel.app/" })); 
 app.use(express.json());
 
 // routes
