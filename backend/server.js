@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // middlewares
-app.use(cors({ origin: "https://pharaoh-talk.vercel.app/" })); 
+app.use(cors({ origin: "https://pharaoh-talk.vercel.app" })); 
 app.use(express.json());
 
 // routes
