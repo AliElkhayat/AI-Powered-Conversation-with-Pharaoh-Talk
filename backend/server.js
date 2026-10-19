@@ -8,29 +8,12 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middlewares
-app.use(
-  cors({
-    origin: [
-      "https://pharaoh-talk.vercel.app",
-      "http://localhost:5173",
-    ],
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
-
+// middlewares
+app.use(cors({ origin: "https://pharaoh-talk.vercel.app" })); 
 app.use(express.json());
 
-// Routes
+// routes
 app.use("/api/chat", chatRoute);
 
-// Export the Express app for Vercel
-module.exports = app;
+export default app;
 
-// Run locally
-if (require.main === module) {
-  app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
-}
